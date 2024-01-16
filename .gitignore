@@ -1,0 +1,12 @@
+__pycache__
+share/
+Lib/
+Scripts/
+*.log
+*.png
+*.db
+/build/
+dist/
+*.mp4
+*.cfg
+ffmpeg/ffmpeg.exe
