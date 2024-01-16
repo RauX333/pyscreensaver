@@ -8,17 +8,20 @@ In my tests, the OCR performance on Windows using third-party utilities was not 
 ## Installation
 1. Clone the repository.
 2. Download [ffmpeg.exe](https://ffmpeg.org/download.html) and place it in the `ffmpeg/` folder as `ffmpeg.exe`.
+3. `pip install -r requirements.txt` to install needed python packages.
 
 ## Configuration
 Modify the settings in the `config.ini` file.
 - `shot_interval`: Time interval between screenshots.
 - `white_list`: Only capture screenshots of applications in the whitelist.
-- `ocr_type`: Choose between precise or fast OCR.
+- `ocr_type`: Choose between precise([chineseocr_lite](https://github.com/DayBreak-u/chineseocr_lite)) or fast(windows sdk) OCR.
 
-## Test Run
-Run the following command to execute the application:
+## Run
 ``` python main.py ```
 
 ## Build
-To build the application into an executable using PyInstaller, run the following command:
+To build the application into an executable using PyInstaller (you need to install it first), run the following command:
 ```pyinstaller --clean .\screen_saver.spec```
+
+## About OCR
+
